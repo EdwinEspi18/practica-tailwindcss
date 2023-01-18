@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      display: ["-apple-system", "system-ui", "sans-serif"],
+      display: ["Poppins", "system-ui", "sans-serif"],
     },
   },
   plugins: [],
