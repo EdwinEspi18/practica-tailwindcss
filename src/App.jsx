@@ -1,12 +1,23 @@
-import { Fragment, useState } from "react";
 import netflixLogo from "./assets/logo.png";
+import img1 from "./assets/1.jpg";
+import img2 from "./assets/2.jpg";
+import img3 from "./assets/3.jpg";
+import img4 from "./assets/4.jpg";
+import img5 from "./assets/5.jpg";
+import img6 from "./assets/6.jpg";
+import img7 from "./assets/7.jpg";
+import img8 from "./assets/8.jpg";
+import img9 from "./assets/9.jpg";
+import img10 from "./assets/10.jpg";
+import { UserIcon } from "@heroicons/react/24/outline";
+
 import "./App.css";
 
 function App() {
   return (
-    <div className='bg-[url("./BG.jpg")] bg-repeat-y md:bg-repeat-x bg-contain h-screen'>
-      <div className='backdrop-blur-sm'>
-        <header className='relative bg-black bg-opacity-50 h-14 dark:text-slate-300 w-full flex justify-between items-center px-3'>
+    <div className='bg-[url("./BG.jpg")] bg-repeat-y md:bg-repeat-x bg-contain h-auto'>
+      <div className='backdrop-blur-sm h-auto'>
+        <header className='bg-black bg-opacity-50 h-14 dark:text-slate-300 w-full flex justify-between items-center px-3'>
           <div className='flex items-center cursor-pointer no-underline'>
             <a className='flex items-center text-gray-300 tracking-wide text-xs md:text-base font-medium whitespace-nowrap'>
               <img
@@ -72,22 +83,74 @@ function App() {
             </ul>
           </nav>
         </header>
-        <main className='flex flex-col gap-2 md:gap-16 h-screen items-center justify-around bg-black bg-opacity-50 w-full'>
+        <main className='flex flex-col gap-2 pt-20 min-h-full items-center justify-around bg-black bg-opacity-50 w-full'>
           <div className='flex flex-col items-center gap-1 md:gap-14'>
             <h1 className='font-display tracking-widest md:tracking-normal font-semibold text-4xl md:text-7xl xl:text-8xl text-gray-50'>
               Top 10 global
             </h1>
             <div className='flex flex-col gap-2 items-center'>
-              <p className='text-gray-300 text-center'>
+              <p className='w-56 text-gray-300 text-center '>
                 Listas semanales del Top 10 de películas y TV más vistos.
               </p>
-              <a className='underline text-red-600' href='#'>
+              <a className='underline text-red-600 font-bold' href='#'>
                 Aquí puedes ver las listas Top 10 por país
               </a>
             </div>
           </div>
           <div className='mt-10'>
             <h2 className='text-white'>Lista de las peliculas (PROCESO)</h2>
+            <section className='flex w-[850px] h-96'>
+              <img
+                className='w-0 flex-grow object-cover transition-all ease-out opacity-80 hover:cursor-crosshair hover:w-4/5 contrast-100'
+                src={img1}
+                alt='IMAGES NETFLIX'
+              />
+              <img
+                className='w-0 flex-grow object-cover transition-all ease-out opacity-80 hover:cursor-crosshair hover:w-4/5 contrast-100'
+                src={img2}
+                alt='IMAGES NETFLIX'
+              />
+              <img
+                className='w-0 flex-grow object-cover transition-all ease-out opacity-80 hover:cursor-crosshair hover:w-4/5 contrast-100'
+                src={img3}
+                alt='IMAGES NETFLIX'
+              />
+              <img
+                className='w-0 flex-grow object-cover transition-all ease-out opacity-80 hover:cursor-crosshair hover:w-4/5 contrast-100'
+                src={img4}
+                alt='IMAGES NETFLIX'
+              />
+              <img
+                className='w-0 flex-grow object-cover transition-all ease-out opacity-80 hover:cursor-crosshair hover:w-4/5 contrast-100'
+                src={img5}
+                alt='IMAGES NETFLIX'
+              />
+              <img
+                className='w-0 flex-grow object-cover transition-all ease-out opacity-80 hover:cursor-crosshair hover:w-4/5 contrast-100'
+                src={img6}
+                alt='IMAGES NETFLIX'
+              />
+              <img
+                className='w-0 flex-grow object-cover transition-all ease-out opacity-80 hover:cursor-crosshair hover:w-4/5 contrast-100'
+                src={img7}
+                alt='IMAGES NETFLIX'
+              />
+              <img
+                className='w-0 flex-grow object-cover transition-all ease-out opacity-80 hover:cursor-crosshair hover:w-4/5 contrast-100'
+                src={img8}
+                alt='IMAGES NETFLIX'
+              />
+              <img
+                className='w-0 flex-grow object-cover transition-all ease-out opacity-80 hover:cursor-crosshair hover:w-4/5 contrast-100'
+                src={img9}
+                alt='IMAGES NETFLIX'
+              />
+              <img
+                className='w-0 flex-grow object-cover transition-all ease-in opacity-80 hover:cursor-crosshair hover:w-4/5 contrast-100'
+                src={img10}
+                alt='IMAGES NETFLIX'
+              />
+            </section>
           </div>
         </main>
       </div>
